@@ -24,7 +24,7 @@
   }
 
 
-  document.getElementById('password').addEventListener('click',()=>{
+  document.getElementById('submit').addEventListener('click',()=>{
         if(!isPasswordSave(password)){
             document.getElementById('password').style.border = "5px solid red"
             document.getElementById('password').style.backgroundColor = "red"
