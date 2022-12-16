@@ -10,50 +10,34 @@
     <head>
         <h2>Zaloguj siue</h2>
     </head>
-<section class="signUp">
-    <form action="dane.php" method="post">
-        <h3>Your Personal Information</h3>
-        <label class="signData" id="name" for="name">
-            <p>Name: </p>
-            <input type="text" name="name">
-        </label>
-        <label class="signData" id="secondName" for="secondName">
-            <p>Second Name: </p>
-            <input type="text" name="secondName">
-        </label>
-        <label class="signData" id="email" for="email">
-            <p>Email: </p>
-            <input type="email" name="email">
-        </label><br>
-        <label class="signData" id="news" for="news">
-            <input type="checkbox" name="news">
-            <p>Sign to our news letter</p>
+    <section class="signUp">
+        <form action="dane.php" method="post">
+            <h3>Your Personal Information</h3>
+            <label class="signData"  for="name">Name</label><span style="color: red !important; display: inline; float: none;">*</span>
+            <input type="text" id="name" name="name"><br>
+            <label class="signData"  for="secondName">Second Name:</label><span style="color: red !important; display: inline; float: none;">*</span>
+            <input type="text" id="secondName" name="secondName"><br>
+            <label class="signData"  for="email">E-mail:</label><span style="color: red !important; display: inline; float: none;">*</span>
+            <input type="email" id="email" name="email"><br>
+            <label class="signData" for="password">password:</label><span style="color: red !important; display: inline; float: none;">*</span>
+            <input type="password" id="password" name="password" ><br>
+            <label class="signData" for="news">Sign to our news letter</label>
+            <input type="checkbox"  id="news" name="news">
         </label>
         <h3>Your Address</h3>
-        <label class="signData" id="name2" for="name2">
-            <p>Name: </p>
-            <input type="text" name="name2" value="">
-        </label>
-        <label class="signData" id="company" for="company">
-            <p>Company: </p>
-            <input type="text" name="company" >
-        </label>
-        <label class="signData" id="street" for="street">
-            <p>Street and house number: </p>
-            <input type="text" name="street">
-        </label>
-        <label class="signData" id="postCode" for="postCode">
-            <p>ZIP code: </p>
-            <input type="text" name="postCode">
-        </label>
-        <label class="signData" id="city" for="city">
-            <p>City: </p>
-            <input type="text" name="city" value="">
-        </label>
-        <label class="signData" id="country" for="country">
-            <p>country: </p>
-            <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
-        
+        <label class="signData"  for="name2">Name:</label><span style="color: red !important; display: inline; float: none;">*</span>
+        <input type="text" id="name2" name="name2" value=""><br>
+        <label class="signData"  for="secondName2">Second Name:</label><span style="color: red !important; display: inline; float: none;">*</span>
+        <input type="text" id="secondName2" name="secondName2"><br>
+        <label class="signData"  for="company">Company:</label>
+        <input type="text" id="company" name="company" ><br>
+        <label class="signData"  for="street">Street and house number: </label><span style="color: red !important; display: inline; float: none;">*</span>
+        <input type="text" id="street" name="street"><br>
+        <label class="signData"  for="postCode">ZIP code: </label><span style="color: red !important; display: inline; float: none;">*</span>
+        <input type="text" id="postCode" name="postCode"><br>
+        <label class="signData"  for="city">City:</label><span style="color: red !important; display: inline; float: none;">*</span>
+        <input type="text" id="city" name="city" value=""><br>
+        <label class="signData"  for="country">Country:</label><span style="color: red !important; display: inline; float: none;">*</span>         
             <select id="country" name="country" class="form-control">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -299,13 +283,15 @@
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-            </select>
-        </label>
-    </form>
-
-
-</section>
-<a href="changePassword.html">nie pamietam hasła</a>
-<a href="index.html">Zaloguj sie</a>
+            </select><br>
+            <label class="signData"  for="phone">Phone:</label><span style="color: red !important; display: inline; float: none;">*</span>
+            <input type="number" id="phone" name="phone">
+        </form>
+        
+        
+    </section>
+    <a href="changePassword.html">nie pamietam hasła</a>
+    <a href="index.html">Zaloguj sie</a>
 </body>
+<script src="script.js"></script>
 </html>
