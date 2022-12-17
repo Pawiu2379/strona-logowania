@@ -1,8 +1,10 @@
 1 Aby Strona działała trzeba umieścić wszytkie pliki w folderze C:\xampp\htdocs\strona-logowania
 2 Uruchomić usługi Apache i Mysql w programie xampp.
-2 Potem wejść w console mysql i wpisać te 2 komendy: 
+2 Potem wejść w console mysql i wpisać te 3 komendy: 
 
 	create database usernames;
+
+	use usernames;
 
 	CREATE TABLE `usersData` (
 		`Id` INT(20) AUTO_INCREMENT,
@@ -22,5 +24,3 @@
 
 3 W przeglądarce wpisać http://localhost/strona-logowania/index.html
 
-# INSERT INTO usersData(`name`, `secondName`,`email`,`password`,`news`,`company`,`street`,`postCode`,`city`,`country`,`number`)
-#         VALUES ("$name", "$secondName","$email","$password","$news","$company","$street","$postCode","$city","$country","$number")
