@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawel Koc</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <head>
+    <header>
         <h2>Fill informations</h2>
-    </head>
+    </header>
     <section class="signUp">
         <form action="dane.php" method="post">
             <h3>Your Personal Information</h3>
@@ -22,7 +23,7 @@
             <label class="signData" for="password">password:</label><span style="color: red !important; display: inline; float: none;">*</span>
                 <input type="password" id="password" name="password" ><br>
             <label class="signData" for="news">Sign to our news letter</label>
-                <input type="checkbox"  id="news" name="news" checked>
+                <input type="checkbox"  id="news" name="news" value="yes" checked>
         </label>
         <h3>Your Address</h3>
         <label class="signData"  for="name2">Name:</label><span style="color: red !important; display: inline; float: none;">*</span>
@@ -31,14 +32,14 @@
             <input type="text" id="secondName2" name="secondName2"><br>
         <label class="signData"  for="company">Company:</label>
             <input type="text" id="company" name="company" ><br>
-        <label class="signData"  for="street">Street and house number: </label><span style="color: red !important; display: inline; float: none;">*</span>
+        <label class="signData"  for="street">Address: </label><span style="color: red !important; display: inline; float: none;">*</span>
             <input type="text" id="street" name="street"><br>
         <label class="signData"  for="postCode">ZIP code: </label><span style="color: red !important; display: inline; float: none;">*</span>
             <input type="text" id="postCode" name="postCode"><br>
         <label class="signData"  for="city">City:</label><span style="color: red !important; display: inline; float: none;">*</span>
             <input type="text" id="city" name="city" value=""><br>
         <label class="signData"  for="country">Country:</label><span style="color: red !important; display: inline; float: none;">*</span>         
-            <select id="country" name="country" class="form-control">
+            <select id="country" name="country" class="inputs">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -285,14 +286,12 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select><br>
             <label class="signData"  for="phone">Phone:</label><span style="color: red !important; display: inline; float: none;">*</span>
-            <input type="number" id="phone" name="phone">
-            <input type="submit" id="submit" value="zaloguj">
-        </form>
+            <input type="number" id="phone" name="phone"><br>
+            <input type="submit" id="submit" value="Submit">
+        </form><br>
         
-        
+        <a href="changePassword.html">nie pamietam hasła</a>
+        <a href="index.html">Zaloguj sie</a>
     </section>
-    <a href="changePassword.html">nie pamietam hasła</a>
-    <a href="index.html">Zaloguj sie</a>
 </body>
-<script src="script.js"></script>
 </html>

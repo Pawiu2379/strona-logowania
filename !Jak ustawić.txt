@@ -1,0 +1,26 @@
+1 Aby Strona działała trzeba umieścić wszytkie pliki w folderze C:\xampp\htdocs\strona-logowania
+2 Uruchomić usługi Apache i Mysql w programie xampp.
+2 Potem wejść w console mysql i wpisać te 3 komendy: 
+
+	create database usernames;
+
+	use usernames;
+
+	CREATE TABLE `usersData` (
+		`Id` INT(20) AUTO_INCREMENT,
+		`name` VARCHAR(255),
+		`secondName` VARCHAR(255),
+		`email` VARCHAR(255),
+		`password` VARCHAR(255),
+		`news` BOOLEAN,
+		`company` VARCHAR(255),
+		`street` VARCHAR(253),
+		`postCode` INT(199),
+		`city` VARCHAR(255),
+		`country` VARCHAR(255),
+		`number` int(200),
+		PRIMARY KEY (`Id`)
+	)ENGINE= InnoDB DEFAULT CHARSET latin1;
+
+3 W przeglądarce wpisać http://localhost/strona-logowania/index.html
+

@@ -1,9 +1,9 @@
-<?php 
+<?php
+    $news = null;
     $name = $_POST['name'];
     $secondName = $_POST['secondName'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $news = $_POST['news'];
     $company = $_POST['company'];
     $street = $_POST['street'];
     $postCode = $_POST['postCode'];
@@ -11,24 +11,30 @@
     $country = $_POST['country'];
     $number = $_POST['phone'];
     $news = boolval($news);
-
+    if($_POST['news'] = null){
+    $news = 0;
+    } else {
+     $news = $_POST['news'];
+    }
     
-    echo "$name $secondName $email $password $news $company $street $postCode $city $country $number"; 
+    // echo "$name $secondName $email $password $news $company $street $postCode $city $country $number"; 
     //mysql connestion
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $db_password = "";
     $dbname = "usernames";
     $tablename = "usersData";
     // Create connection
-    $connection = mysqli_connect($servername, $username, $password, $dbname);
+    $connection = mysqli_connect($servername, $username, $db_password, $dbname);
     // Check connection
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }
+
     $sql = "INSERT INTO $tablename(`name`, `secondName`,`email`,`password`,`news`,`company`,`street`,`postCode`,`city`,`country`,`number`)
-             VALUES ('$name','$secondName','$email','$password','$news','$company','$street','$postCode','$city','$country','$number');";
-   
+     VALUES ('$name','$secondName','$email','$password','$news','$company','$street','$postCode','$city','$country','$number');";
+
+
    if (mysqli_query($connection, $sql)) {
         echo "<h3>Pomyślnie Cie Zarejestrowano </h3>";
         echo "<a href='index.html'>Do strony logowania</a>";
