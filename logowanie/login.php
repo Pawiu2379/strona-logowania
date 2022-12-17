@@ -34,8 +34,8 @@ $password = $_POST['password'];
         };
     }else{
         echo "podany login nie istnieje w bazie danych ";
-        echo "<a href='signUp.html'>Zarejestruj sie</a>";
-        echo "<a href='index.html'>Spróbuj ponownie</a>";
+        echo "<a href='/rejestracja/signUp.html'>Zarejestruj sie</a>";
+        echo "<a href='/logowanie/index.html'>Spróbuj ponownie</a>";
     };
 
     mysqli_close($connection);

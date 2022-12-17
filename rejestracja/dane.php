@@ -31,7 +31,7 @@
    
    if (mysqli_query($connection, $sql)) {
         echo "<h3>Pomyślnie Cie Zarejestrowano </h3>";
-        echo "<a href='index.html'>Do strony logowania</a>";
+        echo "<a href='/logowanie/index.html'>Do strony logowania</a>";
         echo "<script>console.log('New record created successfully')</script>";
     } else {
         echo "<script>console.log('Error: " . $sql . "<br>" . mysqli_error($conn) + "')<script>";
