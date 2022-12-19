@@ -19,7 +19,6 @@
     $dbname = "usernames";
     $tablename = "usersData";
     $connection = mysqli_connect($servername, $username, $db_password, $dbname);
-    // Check connection
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }

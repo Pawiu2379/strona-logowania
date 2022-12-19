@@ -27,16 +27,17 @@
      $news = $_POST['news'];
     }
     
-    // echo "$name $secondName $email $password $news $company $street $postCode $city $country $number"; 
-    //mysql connestion
+    
+    
+    
     $servername = "localhost";
     $username = "root";
     $db_password = "";
     $dbname = "usernames";
     $tablename = "usersData";
-    // Create connection
+   
     $connection = mysqli_connect($servername, $username, $db_password, $dbname);
-    // Check connection
+
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }
